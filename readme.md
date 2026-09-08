@@ -2,6 +2,11 @@
 
 This repository contains input road and site data and R code used for network analysis and comparison of the Roman and Medieval road network in the Levant/Bilād al-Šām. The repository serves as a supplementary data to the article 'From cursus publicus to barīd: change and persistency of the terrestrial communication routes in the Levant/Bilād al-Šām'.
 
+- [Introduction](https://https://github.com/pazadam/VIA-TARIQ-Medieval-roads#introduction)
+- [Data](https://github.com/pazadam/VIA-TARIQ-Medieval-roads#data)
+- [Dependencies](https://github.com/pazadam/VIA-TARIQ-Medieval-roads#dependencies)
+- [Funding information](https://github.com/pazadam/VIA-TARIQ-Medieval-roads#funding-information)
+
 ### Introduction
 
 This research focuses on the persistency of the Roman road network into the Medieval period (Early-Middle Islamic, ca. 650-1517 CE) in the Levant/Bilād al-Šām (former Roman provinces of Syria, Judaea, and Arabia). This R code employs network and spatial analytical methods to explore a) change and persistency of important nodal points using degree and betweenness centrality, b) change and persistency of important roads using edge betweenness centrality, and c) analyse clustering of nodal points across the periods.
@@ -15,7 +20,7 @@ The Roman road data are based on the [Itiner-e](https://itiner-e.org) dataset. T
 Structure of the *roads_early_islamic/middle_islamic/early_mamluk/late_mamluk* files:
 
 | field name | type | description |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | id | integer | unique numerical identifier |
 | name | string | name of the road segment |
 | type | string | 'Main Road' or 'Secondary Road' |
@@ -31,7 +36,7 @@ Structure of the *roads_early_islamic/middle_islamic/early_mamluk/late_mamluk* f
 *roads_roman* file has slightly different data structure:
 
 | field name | type | description |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | id | integer | unique numerical identifier |
 | type | string | 'Main Road' or 'Secondary Road' |
 | typeWeight | integer | numeric code of the type, 'Main' = 2, 'Secondary' = 1 |
@@ -44,7 +49,7 @@ Structure of the *roads_early_islamic/middle_islamic/early_mamluk/late_mamluk* f
 Structure of the *sites_early_islamic/middle_islamic/early_mamluk/late_mamluk* files:
 
 | field name | type | description |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | id | integer | unique numerical identifier |
 | name | string | Medieval name of the site |
 | modernName | string | modern name of the site |
@@ -63,7 +68,7 @@ Structure of the *sites_early_islamic/middle_islamic/early_mamluk/late_mamluk* f
 *sites_roman* file has different data structure:
 
 | field name | type | description |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | id | integer | unique numerical identifier |
 | name | string | Medieval name of the site |
 | geoContext | string | modern name of the site |
@@ -97,8 +102,7 @@ The code depends on the following R packages:
 
 This research was undertaken in the project '*VIA-TARIQ: Analysing the long-term change and persistency of the Roman road system in the Levant*'. This project has received funding from the European Union's Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No 101151931.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-![License](https://img.shields.io/badge/license-CC%20BY%204.0-yellow.svg?style=social)
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ![License](https://img.shields.io/badge/license-CC%20BY%204.0-yellow.svg?style=social)
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
