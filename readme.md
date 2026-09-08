@@ -15,7 +15,7 @@ The Roman road data are based on the [Itiner-e](https://itiner-e.org) dataset. T
 Structure of the *roads_early_islamic/middle_islamic/early_mamluk/late_mamluk* files:
 
 | field name | type | description |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | id | integer | unique numerical identifier |
 | name | string | name of the road segment |
 | type | string | 'Main Road' or 'Secondary Road' |
@@ -31,7 +31,7 @@ Structure of the *roads_early_islamic/middle_islamic/early_mamluk/late_mamluk* f
 *roads_roman* file has slightly different data structure:
 
 | field name | type | description |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | id | integer | unique numerical identifier |
 | type | string | 'Main Road' or 'Secondary Road' |
 | typeWeight | integer | numeric code of the type, 'Main' = 2, 'Secondary' = 1 |
@@ -44,7 +44,7 @@ Structure of the *roads_early_islamic/middle_islamic/early_mamluk/late_mamluk* f
 Structure of the *sites_early_islamic/middle_islamic/early_mamluk/late_mamluk* files:
 
 | field name | type | description |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | id | integer | unique numerical identifier |
 | name | string | Medieval name of the site |
 | modernName | string | modern name of the site |
@@ -96,3 +96,10 @@ The code depends on the following R packages:
 ### Funding information
 
 This research was undertaken in the project '*VIA-TARIQ: Analysing the long-term change and persistency of the Roman road system in the Levant*'. This project has received funding from the European Union's Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No 101151931.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+![License](https://img.shields.io/badge/license-CC%20BY%204.0-yellow.svg?style=social)
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+[![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
