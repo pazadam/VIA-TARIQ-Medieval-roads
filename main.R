@@ -453,6 +453,25 @@ lapply(names(robustness_plots), function(nm) {
   
 })
 
+#Summarise values (min, max, mean, median Spearman's rho per subsample size and period) in table
+robustness_table <- bind_rows(
+  lapply(seq_along(robustness), function(i) {
+    robustness[[i]] %>%
+      group_by(variable) %>%
+      summarise(
+        min = min(value, na.rm = TRUE),
+        max = max(value, na.rm = TRUE),
+        mean = mean(value, na.rm = TRUE),
+        median = median(value, na.rm = TRUE),
+        .groups = "drop"
+      ) %>%
+      mutate(dataframe = names(robustness)[i])
+  })
+) %>%
+  select(dataframe, variable, min, max, mean, median)
+
+write.csv2(robustness_table, file = "outputs/robustness_table.csv")
+
 ###############################################################################
 ###Plot change in normalised time-weighted betweenness (nodes)
 ##Roman to EI
